@@ -122,7 +122,7 @@ module.exports = function(app) {
                 fieldFiles.forEach(function (file) {
                     file.name = path.parse(file.originalFilename).name;
                     file.ext = path.parse(file.originalFilename).ext.replace('.','');
-                    file.distName = file.name + new Date().getTime() + file.ext;
+                    file.distName = file.name + new Date().getTime() + '.' + file.ext;
                     file.distPath = path.resolve(settings.dist, file.distName);
                     file.content = fs.readFileSync(file.path);
 
