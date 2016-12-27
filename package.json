@@ -1,6 +1,6 @@
 {
   "name": "filerup",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "express file upload",
   "main": "index.js",
   "directories": {
