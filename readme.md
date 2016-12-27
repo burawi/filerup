@@ -9,7 +9,7 @@ var filerup = require('filerup')(app);
 ```
 # Usage
 ```javascript
-app.use('/upload', function (req, res) {;
+app.use('/upload', function (req, res) {
     var msg = filerup.upload(req,{
         fields: ['avatar'], // Default: all fields
         types: ['bmp','png'], // Default: all types
